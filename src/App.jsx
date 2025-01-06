@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import AboutMe from "./Components/Aboutme"
+import AboutMe from "./Components/AboutMe"
 import Navbar from "./Components/Navbar"
 import Stripes from "./Components/Stripes"
 import Work from "./Components/Work"
