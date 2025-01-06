@@ -1,5 +1,3 @@
-import Lottie from "lottie-react";
-import animationData from "../assets/animation.json";
 import gsap from "gsap";
 
 const Work = () => {
