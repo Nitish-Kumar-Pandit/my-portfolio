@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.logo{
+        font-family: "Homemade Apple", cursive;
+        font-weight: 400;
+        font-style: normal;
+}
+
+
+body::-webkit-scrollbar{
+        display: block;
+        width: 4px;
+        background-color: #181818;
+    }
+    
+    body::-webkit-scrollbar-thumb{
+        background-color: #fff; 
+        border-radius: 10px;
+    }
+
+body{
+        background-color: #18181B;
+        cursor: none;
+}
+
+.marquee{
+        mask-image: linear-gradient(
+                to right,
+                hsl(0 0% 0% / 0),
+                hsl(0 0% 0% / 1) 10%,
+                hsl(0 0% 0% / 1) 90%,
+                hsl(0 0% 0% / 0)
+              );
+}
