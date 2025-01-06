@@ -4,7 +4,7 @@ import { useState } from "react";
 
 function Projects() {
     var projects=[
-      {title: "Valorant Recreation", desc:"Valorant is my favorite video game. So I decided to recreate at least its website's frontend and this project was so much fun.", live: true, case: true, liveDemoUrl: "https://nitish-kumar-pandit.github.io/Valorant-Recreation", githubUrl: "https://github.com/Nitish-Kumar-Pandit/Valorant-Recreation"},
+      {title: " Recreation", desc:"Valorant is my favorite video game. So I decided to recreate at least its website's frontend and this project was so much fun.", live: true, case: true, liveDemoUrl: "https://nitish-kumar-pandit.github.io/Valorant-Recreation", githubUrl: "https://github.com/Nitish-Kumar-Pandit/Valorant-Recreation"},
       {title: "CashTrack", desc:"Built a dynamic web application that enables user to track their finances. AI will summarize and give financial advice based on the transaction history.", live: true, case: true, liveDemoUrl: "https://cash-track-eruj.vercel.app/", githubUrl: "https://github.com/Nitish-Kumar-Pandit/CashTrack"},
       {title: "WaveLink", desc:"A Chat Application for real-time communication that enables users to send messages and connect seamlessly across devices.", live: true, case: true, liveDemoUrl: "https://wave-link-ab5sydwmx-nitish-kumar-pandits-projects.vercel.app/", githubUrl: "https://github.com/Nitish-Kumar-Pandit/WaveLink"},
       {title: "Realtime Device Tracker", desc:"A Real-Time Device Tracker is a system that continuously monitors and displays the live location or status of devices on a map.", live: true, case: true, liveDemoUrl: "https://realtime-tracker-8kyd.onrender.com/", githubUrl: "https://github.com/Nitish-Kumar-Pandit/Realtime-Tracker" },
