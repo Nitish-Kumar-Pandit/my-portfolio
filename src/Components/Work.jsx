@@ -6,6 +6,7 @@ const Work = () => {
   return (
     <div className="w-full h-[45vh]">
       <div className="max-w-screen-lg mx-auto ">
+        <div>
         <h1
           onMouseEnter={() => {
             gsap.to("#cursor", { scale: 7, duration: 0.3 });
@@ -15,14 +16,9 @@ const Work = () => {
           }}
           className="text-[6vw] relative font-medium mt-32 text-center select-none tracking-tight"
         >
-          Hell <span className="absolute -left-40 -bottom-5">
-            <Lottie
-              animationData={animationData}
-              loop={true}
-              className="w-[10%] inline-block"
-            />
-          </span>&nbsp;&nbsp;, Nitish this side!!!
+          Hello, Nitish this side!!!
         </h1>
+          </div>
         <h3 onMouseEnter={() => {
             gsap.to("#cursor", { scale: 3, duration: 0.3 });
           }}
