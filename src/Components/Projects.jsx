@@ -1,6 +1,8 @@
 import { motion } from "framer-motion"
 import Project from "./Project"
 import { useState } from "react";
+import gsap from 'gsap';
+
 
 function Projects() {
     var projects=[
@@ -21,7 +23,18 @@ function Projects() {
 
   return (
       <>
-    <h1 className="text-[2.5rem] font-semibold text-blue-500 pb-5 mx-8 border-b-[1px] mb-0 border-zinc-700">My Projects</h1>
+      <motion.div>
+      <h1
+      onMouseEnter={() => {
+        gsap.to("#cursor", { scale: 1, border: "none", backgroundColor: "white" });
+      }}
+      onMouseLeave={() => {
+        gsap.to("#cursor", { scale: 1, border: "none", backgroundColor: "white" });
+      }} 
+      className="text-[2.5rem] mt-5 font-semibold text-blue-500 pb-5 mx-8 border-b-[1px] mb-0 border-zinc-700">My Projects</h1>
+
+      </motion.div>
+    
     <div className="px-[30px] relative">
     {projects.map((val, index)=> <Project mover={mover} key={index} count={index} val={val} liveDemoUrl={val.liveDemoUrl} githubUrl={val.githubUrl}/>)}
     <div className="absolute top-0 w-[96vw] h-full pointer-events-none ">

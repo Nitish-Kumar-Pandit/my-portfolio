@@ -12,10 +12,10 @@ function Project({ val, mover, count }) {
           className="max-w-screen-xl mx-auto flex items-center justify-between project-container"
         >
           <h1 onMouseEnter={() => {
-            gsap.to("#cursor", { scale: 5, duration: 0.3, });
+            gsap.to("#cursor", { scale: 5, duration: 0.3, border: "none", backgroundColor: "white" });
           }}
           onMouseLeave={() => {
-            gsap.to("#cursor", { scale: 1, duration: 0.3 });
+            gsap.to("#cursor", { scale: 1, duration: 0.3, border: "none", backgroundColor: "white" });
           }} className="capitalize text-3xl">{val.title}</h1>
           <div className="dets w-1/3">
             <p onMouseEnter={() => {

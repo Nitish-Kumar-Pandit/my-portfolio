@@ -5,9 +5,15 @@ import { Link } from 'react-router-dom';
 const AboutMe = () => {
   return (
     <motion.div className=" about-container bg-zinc-900">
-      <h1 className='about-title font-semibold  text-purple-500'>About me</h1>
+      <h1 onMouseEnter={() => {
+            gsap.to("#cursor", { scale: 1, backgroundColor: "white", border: "none" });
+          }}
+          onMouseLeave={() => {
+            gsap.to("#cursor", { scale: 1, backgroundColor: "white", mixBlendMode: "difference" });
+            }}
+      className='about-title font-semibold  text-purple-500'>About me</h1>
       <p  onMouseEnter={() => {
-            gsap.to("#cursor", { scale: 5, duration: 0.3, backgroundColor: "transparent" });
+            gsap.to("#cursor", { scale: 5, duration: 0.3, backgroundColor: "transparent", border: "none" });
           }}
           onMouseLeave={() => {
             gsap.to("#cursor", { scale: 1, duration: 0.3, backgroundColor: "white", mixBlendMode: "difference" });
