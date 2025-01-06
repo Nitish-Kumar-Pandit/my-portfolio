@@ -1,0 +1,44 @@
+.about-container {
+    color: #ffffff; /* White text color */
+    padding: 2rem;
+  }
+  
+  .about-title {
+    font-size: 4em;
+    margin-bottom: 1rem;
+  }
+  
+  .about-content {
+    font-size: 2.7rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    text-align: justify;
+  }
+  
+  .location {
+    font-size: 0.9rem;
+    color: #b3b3b3;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    border-top: 1px solid #555555;
+    padding-top: 0.5rem;
+  }
+  
+  .hire-me-button {
+    background: none;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s;
+  }
+  
+  .hire-me-button:hover {
+    background-color: #ffffff;
+    color: #1a1a1a;
+  }
+  

@@ -16,27 +16,28 @@ function App() {
   
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<div className="text-white  w-full h-screen bg-zinc-900 font-['satoshi']">
-          <Cursor/>
-          <Navbar/>
-          <Work/>
-          <Stripes/>
-          <AboutMe/>
-          <Projects/>
-          <TechStack/>
-          <Footer/>
-        </div>} />
-        <Route path="/about" element={<div className="text-white w-full h-full bg-zinc-900 font-['satoshi']">
-          <Cursor/>
-          <AboutMe/>
-        </div>} />
-        <Route path="/projects" element={<div className="text-white  w-full h-screen bg-zinc-900 font-['satoshi']">
-          <Cursor/>
-          <Projects/>
-        </div>} />
-        <Route path="/contact-us" element={<ContactUs />} />
-      </Routes>
+    <Routes>
+      <Route path="/" element={<div className="text-white  w-full h-screen bg-zinc-900 font-['satoshi']">
+      <Cursor/>
+      <Navbar/>
+      <Work/>
+      <Stripes/>
+      <AboutMe/>
+      <Projects/>
+      <TechStack/>
+      <Footer/>
+    </div>} />
+      <Route path="/about" element={<div className="text-white w-full h-screen bg-zinc-900 font-['satoshi']">
+      <Cursor/>
+      <AboutMe/>
+    </div>} />
+      <Route path="/projects" element={<div className="text-white  w-full h-screen bg-zinc-900 font-['satoshi']">
+      <Cursor/>
+      <Projects/>
+    </div>} />
+      <Route path="/contact-us" element={<ContactUs />  } />
+      
+    </Routes>
     </Router>
   )
 }
