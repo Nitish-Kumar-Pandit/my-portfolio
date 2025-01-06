@@ -14,9 +14,26 @@ const Navbar = () => {
               "Home": "/",
               "About": "/about",
               "Projects": "/projects",
-              "Resume": "/resume.pdf"
             };
-            return (
+            return elem === "Resume" ? (
+              <a
+                onMouseEnter={() => {
+                  gsap.to("#cursor", { backgroundColor: "transparent", border: "0.5px solid", scale: 3, duration: 0.3 });
+                }}
+                onMouseLeave={() => {
+                  gsap.to("#cursor", { scale: 1, duration: 0.3, backgroundColor: "white", border: "none" });
+                }}
+                key={elem}
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm flex items-center gap-1.5"
+              >
+                {elem.length === 0 ? <span className="w-[1px] h-6 rounded-full bg-zinc-700"></span> : null}
+                {index === 0 ? <span style={{ boxShadow: "0 0 0.45em #00FF19" }} className="inline-block w-1 h-1 rounded-full bg-green-500"></span> : null}
+                {elem}
+              </a>
+            ) : (
               <Link
                 onMouseEnter={() => {
                   gsap.to("#cursor", { backgroundColor: "transparent", border: "0.5px solid", scale: 3, duration: 0.3 });
