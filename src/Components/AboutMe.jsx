@@ -8,9 +8,7 @@ const AboutMe = () => {
       <h1 onMouseEnter={() => {
             gsap.to("#cursor", { scale: 1, backgroundColor: "white", border: "none" });
           }}
-          onMouseLeave={() => {
-            gsap.to("#cursor", { scale: 5, backgroundColor: "transparent", mixBlendMode: "difference" });
-            }}
+          
       className='about-title font-semibold  text-purple-500'>About me</h1>
       <p  onMouseEnter={() => {
             gsap.to("#cursor", { scale: 5, duration: 0.3, backgroundColor: "transparent", border: "none" });
